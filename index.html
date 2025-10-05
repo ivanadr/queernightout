@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Queer Night Out · Ivana D.</title>
+  <meta name="description" content="Queer Night Out — monthly LGBTQI+ meetups hosted by Ivana D. Every 2nd Saturday in Frankfurt am Main." />
+  <meta name="author" content="Ivana D." />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg:#0b0b10; --text:#f6f7fb; --muted:#b6b9c6;
+      --rainbow: conic-gradient(from 180deg,#E70000,#FF8C00,#FFEF00,#00811F,#0044FF,#760089,#E70000);
+      --btn: linear-gradient(135deg,#FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
+      --btn-hover: linear-gradient(135deg,#FF6FD8 0%, #A56CC1 50%, #4AADE0 100%);
+    }
+    *{ box-sizing:border-box; }
+    body{
+      margin:0; font-family:Inter,system-ui,sans-serif; background:var(--bg); color:var(--text);
+      line-height:1.7; display:flex; flex-direction:column; align-items:center; padding:24px;
+      -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;
+      background-image:
+        radial-gradient(60% 40% at 20% -10%, rgba(231,0,0,.15), transparent 60%),
+        radial-gradient(60% 40% at 80% -10%, rgba(0,68,255,.15), transparent 60%),
+        radial-gradient(60% 40% at -10% 50%, rgba(255,140,0,.10), transparent 60%),
+        radial-gradient(60% 40% at 110% 50%, rgba(118,0,137,.10), transparent 60%),
+        linear-gradient(#0b0b10, #0f1020);
+    }
+    header{text-align:center;margin-bottom:24px;width:100%;max-width:980px;}
+    .brand-logo{width:clamp(84px,22vw,120px);height:auto;margin-bottom:12px;}
+    h1{font-size:clamp(1.8rem,5.2vw,2.6rem);margin:.2rem 0 .4rem;}
+    p{margin:.4rem 0;}
+    .kicker{color:var(--muted);font-size:1rem;}
+    .divider{width:100%;height:10px;border-radius:999px;background:var(--rainbow);margin:16px 0;filter:saturate(1.2);animation:hue 6s linear infinite;}
+    @keyframes hue{from{filter:hue-rotate(0deg)}to{filter:hue-rotate(360deg)}}
+    iframe{width:100%;max-width:800px;aspect-ratio:16/9;border:none;border-radius:20px;box-shadow:0 20px 50px rgba(0,0,0,.45);}
+    main{width:100%;max-width:980px;margin:24px auto 0;text-align:left;}
+    .events{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px;}
+    .card{background:rgba(255,255,255,.06);border-radius:18px;padding:18px;box-shadow:0 8px 24px rgba(0,0,0,.35);position:relative;overflow:hidden;border:1px solid rgba(255,255,255,.1);}
+    .card::before{content:"";position:absolute;inset:-2px;border-radius:20px;padding:2px;background:conic-gradient(from 0deg,#ff0066,#ffcc00,#00ff88,#00ccff,#a066ff,#ff0066);-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude;opacity:0;pointer-events:none;animation:spin 6s linear infinite;}
+    @keyframes spin{to{transform:rotate(360deg)}}
+    .card:hover::before{opacity:.8;}
+    .card h2{margin-top:0;font-size:clamp(1.1rem,4.4vw,1.35rem);}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:.55rem;padding:.65rem 1rem;border-radius:12px;border:1px solid rgba(255,255,255,.22);background-image:var(--btn);color:#fff;font-weight:800;text-decoration:none;cursor:pointer;transition:transform .12s,filter .12s,box-shadow .12s;box-shadow:0 6px 16px rgba(0,0,0,.35);}
+    .btn:hover{background-image:var(--btn-hover);transform:translateY(-1px);box-shadow:0 10px 24px rgba(0,0,0,.45);}
+    .btn.secondary{background:rgba(255,255,255,.1);}
+    .btn-wrap{display:flex;gap:.5rem;flex-wrap:wrap;}
+    .closing-tagline{text-align:center;margin:40px 0;font-weight:700;font-size:1.15rem;
+      background:linear-gradient(90deg,#E70000,#FF8C00,#FFEF00,#00811F,#0044FF,#760089);
+      -webkit-background-clip:text;-webkit-text-fill-color:transparent;
+      animation:hue 10s linear infinite;}
+    footer{text-align:center;color:var(--muted);padding:40px 0;}
+    .contact-btn{display:inline-flex;align-items:center;gap:.5rem;margin-top:.5rem;padding:.65rem 1rem;border-radius:12px;
+      background-image:var(--btn);color:#fff;font-weight:800;text-decoration:none;border:1px solid rgba(255,255,255,.22);
+      box-shadow:0 6px 16px rgba(0,0,0,.35);}
+    .contact-btn:hover{background-image:var(--btn-hover);transform:translateY(-1px);box-shadow:0 10px 24px rgba(0,0,0,.45);}
+  </style>
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="Rainbow Network logo" class="brand-logo"/>
+    <p class="kicker"><strong>Hosted by Ivana D.</strong></p>
+    <h1>Queer Night Out</h1>
+    <p>LGBTQI+ trainees & professionals from MB, ET JC and Galileo · Allies and friends welcome</p>
+    <div class="divider"></div>
+    <iframe src="https://share.synthesia.io/8b46efce-dea3-4a8e-b29c-f88f53376f8b" loading="lazy" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>
+  </header>
+
+  <main>
+    <section class="events">
+      <div class="card">
+        <h2>October 11 — Get-to-Know Dinner</h2>
+        <p>A relaxed evening to meet, mingle, and set intentions for the season.</p>
+        <p><strong>Time:</strong> 20:00</p>
+        <p><strong>Location:</strong> Lhamo Bistro, Grempstraße 2, 60487 Frankfurt am Main<br>
+        <a class="btn secondary" href="https://share.google/w9mObMwQROV5zY3kn" target="_blank">View on Google Maps</a></p>
+        <div class="btn-wrap"><button class="btn" type="button" data-gcal='{"text":"Queer Night Out — Get-to-Know Dinner","details":"A relaxed evening to meet, mingle, and set intentions for the season.","location":"Lhamo Bistro, Grempstraße 2, 60487 Frankfurt am Main","start":"2025-10-11T20:00:00+02:00","end":"2025-10-11T22:00:00+02:00"}'>Add to Google Calendar</button></div>
+      </div>
+      <div class="card">
+        <h2>November 8 — Queer Bars Night</h2>
+        <p>Explore local queer venues together — safe, social, and fun.</p>
+        <p><strong>Time:</strong> 20:00</p>
+        <p><strong>Location:</strong> Switchboard Community Center, Alte G. 36, 60313 Frankfurt am Main<br>
+        <a class="btn secondary" href="https://share.google/7mwWYGiGCwiY52eRi" target="_blank">View on Google Maps</a></p>
+        <div class="btn-wrap"><button class="btn" type="button" data-gcal='{"text":"Queer Night Out — Queer Bars Night","details":"Explore inclusive venues together — safe, social, and fun.","location":"Switchboard Community Center, Alte G. 36, 60313 Frankfurt am Main","start":"2025-11-08T20:00:00+01:00","end":"2025-11-08T23:00:00+01:00"}'>Add to Google Calendar</button></div>
+      </div>
+      <div class="card">
+        <h2>December 13 — Christmas Markets</h2>
+        <p>Cozy lights, warm drinks, and festive vibes to close the year.</p>
+        <p><strong>Time:</strong> 20:00</p>
+        <p><strong>Location:</strong> Römer Christmas Markets, Römer Square, 60311 Frankfurt am Main<br>
+        <a class="btn secondary" href="https://share.google/NdSa7QazJ1l41GgKq" target="_blank">View on Google Maps</a></p>
+        <div class="btn-wrap"><button class="btn" type="button" data-gcal='{"text":"Queer Night Out — Christmas Markets","details":"Cozy lights, warm drinks, and festive vibes to close the year.","location":"Römer Christmas Markets, Römer Square, 60311 Frankfurt am Main","start":"2025-12-13T20:00:00+01:00","end":"2025-12-13T22:00:00+01:00"}'>Add to Google Calendar</button></div>
+      </div>
+    </section>
+
+    <div class="closing-tagline">Queer Night Out — every 2nd Saturday. Come as you are — see you there! 🌈</div>
+  </main>
+
+  <script>
+    function toZuluBasic(isoWithOffset){
+      const d = new Date(isoWithOffset);
+      const pad=n=>String(n).padStart(2,'0');
+      return `${d.getUTCFullYear()}${pad(d.getUTCMonth()+1)}${pad(d.getUTCDate())}T${pad(d.getUTCHours())}${pad(d.getUTCMinutes())}${pad(d.getUTCSeconds())}Z`;
+    }
+    function openGoogleCalendar({text,details,location,start,end}){
+      const dates=`${toZuluBasic(start)}/${toZuluBasic(end)}`;
+      const base="https://calendar.google.com/calendar/render?action=TEMPLATE";
+      const url=`${base}&text=${encodeURIComponent(text)}&details=${encodeURIComponent(details)}&location=${encodeURIComponent(location)}&dates=${dates}`;
+      window.open(url,"_blank","noopener");
+    }
+    document.addEventListener("click",e=>{
+      const gBtn=e.target.closest("[data-gcal]");
+      if(gBtn){const data=JSON.parse(gBtn.getAttribute("data-gcal"));openGoogleCalendar(data);}
+    },{passive:true});
+  </script>
+
+  <footer>
+    <p><strong>Created by Ivana D.</strong> · © 2025</p>
+    <p>Questions?</p>
+    <a class="contact-btn" href="https://linktr.ee/IvanaDrabova" target="_blank" rel="noopener">Contact the organiser</a>
+  </footer>
+</body>
+</html>
