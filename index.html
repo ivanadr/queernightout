@@ -3,11 +3,17 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Queer Night Out · Ivana D.</title>
-  <meta name="description" content="Queer Night Out — monthly LGBTQI+ meetups hosted by Ivana D. Every 2nd Saturday in Frankfurt am Main." />
+  <title>Queer Night Out</title>
+  <link rel="icon" href="logo.png?v=2">
+  <link rel="shortcut icon" href="favicon-32.png?v=2">
+  <meta name="theme-color" content="#0b0b10">
+
+  <meta name="description" content="Queer Night Out — monthly LGBTQIA+ meetups Every 2nd Saturday in Frankfurt am Main." />
   <meta name="author" content="Ivana D." />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
   <style>
+    .video-intro{color:var(--muted);font-size:clamp(.95rem,2.8vw,1.05rem);margin:8px 0 14px;}
+
     :root {
       --bg:#0b0b10; --text:#f6f7fb; --muted:#b6b9c6;
       --rainbow: conic-gradient(from 180deg,#E70000,#FF8C00,#FFEF00,#00811F,#0044FF,#760089,#E70000);
@@ -27,7 +33,7 @@
         linear-gradient(#0b0b10, #0f1020);
     }
     header{text-align:center;margin-bottom:24px;width:100%;max-width:980px;}
-    .brand-logo{width:clamp(84px,22vw,120px);height:auto;margin-bottom:12px;}
+    .brand-logo{width:clamp(96px,28vw,160px);height:auto;margin-bottom:12px;}
     h1{font-size:clamp(1.8rem,5.2vw,2.6rem);margin:.2rem 0 .4rem;}
     p{margin:.4rem 0;}
     .kicker{color:var(--muted);font-size:1rem;}
@@ -58,15 +64,16 @@
 </head>
 <body>
   <header>
-    <img src="logo.png" alt="Rainbow Network logo" class="brand-logo"/>
-    <p class="kicker"><strong>Hosted by Ivana D.</strong></p>
+    <img src="logo.png" alt="Queer night out logo" class="brand-logo"/>
     <h1>Queer Night Out</h1>
-    <p>LGBTQI+ trainees & professionals from MB, ET JC and Galileo · Allies and friends welcome</p>
+    <p>LGBTQIA+ trainees and professionals from MB, ET JC and Galileo · Allies and friends welcome · Organised by Ivana D.</p>
     <div class="divider"></div>
+    <div class="closing-tagline">Video about Queer Night Out</div>
     <iframe src="https://share.synthesia.io/8b46efce-dea3-4a8e-b29c-f88f53376f8b" loading="lazy" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>
   </header>
 
   <main>
+    <div class="closing-tagline">Events</div>
     <section class="events">
       <div class="card">
         <h2>October 11 — Get-to-Know Dinner</h2>
@@ -94,7 +101,7 @@
       </div>
     </section>
 
-    <div class="closing-tagline">Queer Night Out — every 2nd Saturday. Come as you are — see you there! 🌈</div>
+    <div class="closing-tagline">Queer Night Out — every 2nd Saturday. Come as you are — see you there!</div>
   </main>
 
   <script>
@@ -116,9 +123,9 @@
   </script>
 
   <footer>
-    <p><strong>Created by Ivana D.</strong> · © 2025</p>
-    <p>Questions?</p>
+    <div class="kicker"><strong>Questions?</strong></div>
     <a class="contact-btn" href="https://linktr.ee/IvanaDrabova" target="_blank" rel="noopener">Contact the organiser</a>
+    <p>Ivana D. · © 2025</p>
   </footer>
 </body>
 </html>
